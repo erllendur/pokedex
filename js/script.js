@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const audio = document.getElementById('myAudio');
   const audioIcon = document.getElementById('audioIcon');
 
+  audio.controlsList = 'nodownload';
+  
   audioIcon.addEventListener('click', function () {
     if (audio.paused) {
       audio.play();
