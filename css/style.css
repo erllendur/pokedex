@@ -135,6 +135,16 @@
   }
   
 
+/* Adicione uma classe específica para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+  .audio-container audio {
+    display: none; /* Esconde a tag audio em dispositivos móveis */
+  }
+  
+  .audio-container img {
+    cursor: pointer; /* Adiciona um indicador de cursor para a imagem */
+  }
+}
 
   
   
