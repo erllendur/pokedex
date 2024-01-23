@@ -62,3 +62,16 @@ buttonNext.addEventListener('click', () => {
  renderPokemon(SearchPokemon)
 })
 renderPokemon(SearchPokemon)
+
+document.addEventListener('DOMContentLoaded', function () {
+  const audio = document.getElementById('myAudio');
+  const audioIcon = document.getElementById('audioIcon');
+
+  audioIcon.addEventListener('click', function () {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
+});

@@ -26,7 +26,15 @@
   .pokedex {
     width: 100%;
     max-width: 425px;
-  }
+    }
+
+  
+
+
+
+.pokedex2 {
+    z-index: 2; /* Valor de z-index maior para a pokedex2 */
+}
 
   .pokemon__image {
     position: absolute;
@@ -96,3 +104,40 @@
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
   }
+
+
+  audio::-webkit-media-controls-panel {
+    display: none !important;
+  }
+  
+  
+  .audio-container {
+    position: absolute;
+    top: 100px;
+    left: 47%;
+    transform: translate(5%, -50%);
+    width: 50%;
+    max-width: 425px;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites da div */
+  }
+  
+  .audio-container audio {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .audio-container img {
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+
+
+  
+  
+  
+
+
